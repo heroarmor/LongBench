@@ -97,9 +97,6 @@ def generate_config(model_name, context_len, attn_type):
 
 
 def query_llm(data):
-    args = parse_args()
-    set_seed(2025)
-
     model_name = args.model_name
     batch_size = args.batch_size
     attn_type = args.attn_type
@@ -268,4 +265,5 @@ def main():
 
 if __name__ == "__main__":
     args = parse_args()
+    set_seed(2025)
     main()
